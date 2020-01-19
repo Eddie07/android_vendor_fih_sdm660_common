@@ -18,21 +18,20 @@
 PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmutils.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libFidoCrypto_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFidoCrypto_vendor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
@@ -46,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/sharp/sdm660-common/proprietary//vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
@@ -55,60 +55,120 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
     vendor/sharp/sdm660-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
-    vendor/sharp/sdm660-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/sharp/sdm660-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/sharp/sdm660-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/sharp/sdm660-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
-    vendor/sharp/sdm660-common/proprietary/vendor/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/telephonyservice.xml \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/telephonyservice.xml:system/product/etc/permissions/telephonyservice.xml \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
-    vendor/sharp/sdm660-common/proprietary/vendor/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_VENDOR)/framework/QtiTelephonyServicelibrary.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
-    vendor/sharp/sdm660-common/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
-    vendor/sharp/sdm660-common/proprietary/framework/vendor.qti.latency-V2.0-java.jar:system/framework/vendor.qti.latency-V2.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/com.android.carrierconfig.xml:system/product/etc/permissions/com.android.carrierconfig.xml \
+    vendor/sharp/sdm660-common/proprietary/product/framework/QtiTelephonyServicelibrary.jar:system/product/framework/QtiTelephonyServicelibrary.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/qcrilhook.jar:system/product/framework/qcrilhook.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar:system/product/framework/vendor.qti.data.factory-V1.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/vendor.qti.latency-V2.0-java.jar:system/product/framework/vendor.qti.latency-V2.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.google.android.dialer.support.jar:system/product/framework/com.google.android.dialer.support.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:system/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
+    vendor/sharp/sdm660-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:system/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/sharp/sdm660-common/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
-    vendor/sharp/sdm660-common/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
-    vendor/sharp/sdm660-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
-    vendor/sharp/sdm660-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
-    vendor/sharp/sdm660-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
+vendor/sharp/sdm660-common/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
+     vendor/sharp/sdm660-common/proprietary/vendor/lib/libozoaudiodecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozoaudiodecoder.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libozoaudioencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libozoaudioencoder.so \
     vendor/sharp/sdm660-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/sharp/sdm660-common/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/sharp/sdm660-common/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/sharp/sdm660-common/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/sharp/sdm660-common/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
     vendor/sharp/sdm660-common/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
-    vendor/sharp/sdm660-common/proprietary/lib/librcc.so:system/lib/librcc.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0.so:vendor/lib/vendor.qti.hardware.perf@1.0.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:vendor/lib/vendor.qti.hardware.perf@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/sharp/sdm660-common/proprietary/lib/vendor.qti.ims.rcsconfig@1.0.so:system/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/sharp/sdm660-common/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/vendor.qti.imsrtpservice@2.0.so:system/lib/vendor.qti.imsrtpservice@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/vendor.qti.imsrtpservice@2.1.so:system/lib/vendor.qti.imsrtpservice@2.1.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.imsrtpservice@2.0.so:system/lib64/vendor.qti.imsrtpservice@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.imsrtpservice@2.1.so:system/lib64/vendor.qti.imsrtpservice@2.1.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/android.hardware.camera.common@1.0.so:system/lib64/android.hardware.camera.common@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/libmiracastsystem.so:system/lib/libmiracastsystem.so \
+    vendor/sharp/sdm660-common/proprietary/bin/dun-server:system/bin/dun-server \
+    vendor/sharp/sdm660-common/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
+    vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.1.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/sharp/sdm660-common/proprietary/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:system/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
+    vendor/sharp/sdm660-common/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0.so:system/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libmiracastsystem.so:system/lib64/libmiracastsystem.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:system/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:system/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/bin/sigma_miracasthalservice:system/bin/sigma_miracasthalservice \
+    vendor/sharp/sdm660-common/proprietary/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:system/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
+    vendor/sharp/sdm660-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.0.so:system/lib/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.1.so:system/lib/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/sharp/sdm660-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.2.so:system/lib/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.1.so:system/lib/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.2.so:system/lib64/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.1.so:system/lib64/com.qualcomm.qti.uceservice@2.1.so \
     vendor/sharp/sdm660-common/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndmonitor.so \
     vendor/sharp/sdm660-common/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/sharp/sdm660-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/sharp/sdm660-common/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/sharp/sdm660-common/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
     vendor/sharp/sdm660-common/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/sharp/sdm660-common/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/sharp/sdm660-common/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
+    vendor/sharp/sdm660-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
+    vendor/sharp/sdm660-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
+    vendor/sharp/sdm660-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/sharp/sdm660-common/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/sharp/sdm660-common/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/sharp/sdm660-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/sharp/sdm660-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/sharp/sdm660-common/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
     vendor/sharp/sdm660-common/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
-    vendor/sharp/sdm660-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
+    vendor/sharp/sdm660-common/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
+    vendor/sharp/sdm660-common/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/sharp/sdm660-common/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libqti_workloadclassifiermodel.so:system/lib64/libqti_workloadclassifiermodel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
@@ -116,22 +176,30 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.biometrics.face@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.perf@1.0.so:vendor/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so:vendor/lib64/vendor.qti.hardware.perf@2.0.so \
-    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/sharp/sdm660-common/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
-    vendor/sharp/sdm660-common/proprietary/vendor/bin/DR_AP_Service:$(TARGET_COPY_OUT_VENDOR)/bin/DR_AP_Service \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
+	vendor/sharp/sdm660-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
-    vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
+    vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine_off \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.1.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.2.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.3.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.4.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.5.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.6.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.7.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.1.so \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
@@ -159,10 +227,13 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/sharp/sdm660-common/proprietary/vendor/bin/fstman:$(TARGET_COPY_OUT_VENDOR)/bin/fstman \
+    vendor/sharp/sdm660-common/proprietary/vendor/etc/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
-    vendor/sharp/sdm660-common/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/sharp/sdm660-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/sharp/sdm660-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/sharp/sdm660-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
@@ -204,16 +275,16 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/sharp/sdm660-common/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
-    vendor/sharp/sdm660-common/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
     vendor/sharp/sdm660-common/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
     vendor/sharp/sdm660-common/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
     vendor/sharp/sdm660-common/proprietary/vendor/firmware/a508_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a508_zap.b00 \
@@ -291,8 +362,8 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEGL_adreno.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
@@ -309,14 +380,23 @@ PRODUCT_COPY_FILES += \
    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
    vendor/sharp/sdm660-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/hw/vulkan.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.sdm660.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libstagefright_foundation.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/vndk/libstagefright_omx.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libstagefright_omx.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_foundation.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libstagefright_ozodecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libstagefright_ozodecoder.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libstagefright_ozoencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libstagefright_ozoencoder.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libstagefright_soft_ozodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libstagefright_soft_ozoenc.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libstagefright_soft_ozoenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libstagefright_ozoencoder.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vndk/libstagefright_omx.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_omx.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-dplmedia.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cacert@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
@@ -468,7 +548,6 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
@@ -480,12 +559,22 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_svc_skel.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@1.0.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.power.pasrmanager@1.0.so \
+   vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
+   vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
+vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
+   vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
+   vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
+   vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.1.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.2.so \
@@ -554,7 +643,6 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsbaseimpl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
@@ -562,7 +650,6 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
@@ -637,6 +724,7 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libevent_observer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libevent_observer.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvadsp_stub.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
@@ -739,11 +827,11 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_ulp_adaptor.so \
-    vendor/sharp/sdm660-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/sharp/sdm660-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/sharp/sdm660-common/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
@@ -817,7 +905,133 @@ PRODUCT_COPY_FILES += \
    vendor/sharp/sdm660-common/proprietary/vendor/lib/libmmsw_opencl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_opencl.so \
    vendor/sharp/sdm660-common/proprietary/vendor/lib/libmmsw_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_platform.so \
    vendor/sharp/sdm660-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
-   vendor/sharp/sdm660-common/proprietary/vendor/lib/libmmsw_detail_enhancement.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_detail_enhancement.so
+   vendor/sharp/sdm660-common/proprietary/vendor/lib/libmmsw_detail_enhancement.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_detail_enhancement.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libcryptfshwcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwcommon.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwhidl.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib64/libcryptfshwcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcryptfshwcommon.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib64/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcryptfshwhidl.so \
+    vendor/sharp/sdm660-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/sharp/sdm660-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+   vendor/sharp/sdm660-common/proprietary/lib/libmmparserextractor.so:system/lib/libmmparserextractor.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/sharp/sdm660-common/proprietary/lib64/libmmparserextractor.so:system/lib64/libmmparserextractor.so \
+	vendor/sharp/sdm660-common/proprietary/bin/wfdservice:system/bin/wfdservice \
+	vendor/sharp/sdm660-common/proprietary/etc/init/wfdservice.rc:system/init/wfdservice.rc \
+	vendor/sharp/sdm660-common/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+	vendor/sharp/sdm660-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+	vendor/sharp/sdm660-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+	vendor/sharp/sdm660-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+	vendor/sharp/sdm660-common/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+	vendor/sharp/sdm660-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+	vendor/sharp/sdm660-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+	vendor/sharp/sdm660-common/proprietary/lib64/libwfds.so:system/lib64/libwfds.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+         vendor/sharp/sdm660-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+	vendor/sharp/sdm660-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+ 	vendor/sharp/sdm660-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+ 	vendor/sharp/sdm660-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+	vendor/sharp/sdm660-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libFDDefault.so:system/lib64/libFDDefault.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMGBeauty.so:system/lib64/libMGBeauty.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiAnimoji-jni-1.0.so:system/lib64/libMegviiAnimoji-jni-1.0.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiAnimoji.so:system/lib64/libMegviiAnimoji.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiBeautify-jni.so:system/lib64/libMegviiBeautify-jni.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiBeautifyImage.so:system/lib64/libMegviiBeautifyImage.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiFacepp-0.5.2.so:system/lib64/libMegviiFacepp-0.5.2.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiHum-jni-1.0.so:system/lib64/libMegviiHum-jni-1.0.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libMegviiHum.so:system/lib64/libMegviiHum.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libPSImagePreprocess.so:system/lib64/libPSImagePreprocess.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libPSModelSNPE.so:system/lib64/libPSModelSNPE.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libRSSupport.so:system/lib64/libRSSupport.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libSNPE.so:system/lib64/libSNPE.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_beautyshot.so:system/lib64/libarcsoft_beautyshot.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_beautyshot_image_algorithm.so:system/lib64/libarcsoft_beautyshot_image_algorithm.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_hdr.so:system/lib64/libarcsoft_hdr.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_low_light_shot_a1.so:system/lib64/libarcsoft_low_light_shot_a1.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_low_light_shot_b2.so:system/lib64/libarcsoft_low_light_shot_b2.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_low_light_shot_ctl.so:system/lib64/libarcsoft_low_light_shot_ctl.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_low_light_shot_drg.so:system/lib64/libarcsoft_low_light_shot_drg.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_night_shot.so:system/lib64/libarcsoft_night_shot.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_panorama_burstcapture.so:system/lib64/libarcsoft_panorama_burstcapture.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_picselfie_algorithm.so:system/lib64/libarcsoft_picselfie_algorithm.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libarcsoft_smart_denoise.so:system/lib64/libarcsoft_smart_denoise.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libc++_shared.so:system/lib64/libc++_shared.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libgnustl_shared.so:system/lib64/libgnustl_shared.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_ColorConverter.so:system/lib64/libjni_ColorConverter.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_PSImagePreprocess.so:system/lib64/libjni_PSImagePreprocess.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_PSModelSNPE.so:system/lib64/libjni_PSModelSNPE.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_arcsoft_camera.so:system/lib64/libjni_arcsoft_camera.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_arcsoft_lowlight_a1.so:system/lib64/libjni_arcsoft_lowlight_a1.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_arcsoft_lowlight_b2.so:system/lib64/libjni_arcsoft_lowlight_b2.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_arcsoft_lowlight_ctl.so:system/lib64/libjni_arcsoft_lowlight_ctl.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_arcsoft_lowlight_drg.so:system/lib64/libjni_arcsoft_lowlight_drg.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_arcsoft_panorama.so:system/lib64/libjni_arcsoft_panorama.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_hdr_checker.so:system/lib64/libjni_hdr_checker.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_morpho_camera.so:system/lib64/libjni_morpho_camera.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libjni_morpho_denoiser.so:system/lib64/libjni_morpho_denoiser.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmatting.so:system/lib64/libmatting.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmegface_meglive.so:system/lib64/libmegface_meglive.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmegjpeg.so:system/lib64/libmegjpeg.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmorpho_denoiser.so:system/lib64/libmorpho_denoiser.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmorpho_easy_hdr.so:system/lib64/libmorpho_easy_hdr.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmorpho_hdr_checker.so:system/lib64/libmorpho_hdr_checker.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmorpho_image_stab4.so:system/lib64/libmorpho_image_stab4.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libmpbase.so:system/lib64/libmpbase.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libnnp.so:system/lib64//libnnp.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/librs.adablur.so:system/lib64/librs.adablur.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/librs.shapedblur.so:system/lib64/librs.shapedblur.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/librsjni.so:system/lib64/librsjni.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe-android.so:system/lib64//libsnpe-android.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_adsp.so:system/lib64/libsnpe_adsp.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_domains.so:system/lib64/libsnpe_dsp_domains.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_domains_skel.so:system/lib64/libsnpe_dsp_domains_skel.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_domains_system.so:system/lib64/libsnpe_dsp_domains_system.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_domains_v2.so:system/lib64/libsnpe_dsp_domains_v2.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_skel.so:system/lib64/libsnpe_dsp_skel.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_unnamed_domains_v2_skel.so:system/lib64/libsnpe_dsp_unnamed_domains_v2_skel.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_dsp_v65_domains_skel.so:system/lib64/libsnpe_dsp_v65_domains_skel.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsnpe_huamn_effects.so:system/lib64/libsnpe_huamn_effects.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsymphony-cpu.so:system/lib64/libsymphony-cpu.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libsymphonypower.so:system/lib64/libsymphonypower.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/privapp-permissions-fih.xml:system/etc/permissions/privapp-permissions-fih.xml \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm64/libweibosdkcore.so:system/lib64/libweibosdkcore.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libarcsoft_dualcam_refocus.so:system/lib/libarcsoft_dualcam_refocus.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libarcsoft_dualcam_refocus_A1.so:system/lib/libarcsoft_dualcam_refocus_A1.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libarcsoft_dualcam_refocus_B2.so:system/lib/libarcsoft_dualcam_refocus_B2.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libimage_handle.so:system/lib/libimage_handle.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libimage_handle_A1.so:system/lib/libimage_handle_A1.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libimage_handle_B2.so:system/lib/libimage_handle_B2.so \
+ vendor/sharp/sdm660-common/proprietary/Camera/lib/arm/libmpbase.so:system/lib/libmpbase.so
+
+#     vendor/sharp/sdm660-common/proprietary/product/framework/qti-telephony-common.jar:system/product/framework/qti-telephony-common.jar \   
+#    vendor/sharp/sdm660-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+#    vendor/sharp/sdm660-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
+#    vendor/sharp/sdm660-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
@@ -832,15 +1046,19 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     CneApp \
+    CACertService \
     ims \
     uceShimService \
     QtiTelephonyService \
     datastatusnotification \
     qcrilhook \
     qcrilmsgtunnel \
-    ConnectionSecurityService \
     TrustZoneAccessService \
     PowerOffAlarm \
     libmm-disp-apis \
     IWlanService \
+    libaptXHD_encoder \
+    libaptX_encoder \
+    Camera_FIH \
+    BokehEditor_FIH \
     TimeService
